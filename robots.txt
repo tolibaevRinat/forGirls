@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /node_modules/
 
-Sitemap: https://YOUR-DOMAIN.com/sitemap.xml
+Sitemap: https://fizika-agro.netlify.app/sitemap.xml
