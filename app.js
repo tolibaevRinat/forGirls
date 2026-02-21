@@ -131,6 +131,26 @@ function renderSectionButtons() {
     button.addEventListener("click", () => openSection(section.id));
     sidebar.append(button);
   });
+
+  const authorsButton = createButton("menu-item authors-button", "👩‍🏫", "Mualliflar");
+  authorsButton.addEventListener("click", openAuthorsPage);
+  sidebar.append(authorsButton);
+}
+
+function openAuthorsPage() {
+  contentArea.innerHTML = `
+    <section class="section-view">
+      <h2 class="section-title section-title-centered">Mualliflar</h2>
+      <div class="pdf-preview-wrap">
+        <iframe
+          class="pdf-frame"
+          src="./docs/document.pdf"
+          title="Mualliflar"
+          loading="eager"
+        ></iframe>
+      </div>
+    </section>
+  `;
 }
 
 function openSection(sectionId) {
